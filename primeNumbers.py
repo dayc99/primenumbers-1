@@ -28,7 +28,7 @@ def sieve(number):
     for number_in_array in range(3, int(number ** .5) + 1, 2):
         #print("Number at position p: %d" %p)
         if prime[number_in_array]:
-            #make every number that is a multiple of that number false
+            #make every number that is a multiple of that number false skipping even multiples
             for index in range(number_in_array * number_in_array, number + 1, 2 * number_in_array):
                 prime[index] = False
                 #print("Number we are changing to false: %d" %i)
