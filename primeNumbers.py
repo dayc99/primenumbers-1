@@ -59,7 +59,7 @@ class Prime_Number:
 
 
     def print_primes(self, prime_array):
-        print(*prime_array, sep=' ')
+        print(prime_array)
 
 
 
